@@ -92,7 +92,7 @@ for lista in range(0, len(players)):
 
 main_df = pd.DataFrame(list(zip(nacionalidades,players,time,maps,status,kdiff,KD,rating)),columns=[['Nacionalidade', 'Jogadores', 'Time', 'Maps', 'Rounds', 'KDiff', 'KD', 'Rating']])
 
-
+print(main_df)
 
 jogadores = []
 for c in range(0,len(players)):
