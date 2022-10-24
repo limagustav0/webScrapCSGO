@@ -94,23 +94,6 @@ for lista in range(0, len(players)):
 main_df = pd.DataFrame(list(zip(Nacionalidade,players,time,maps,status,kdiff,KD,rating)),columns=[['Nacionalidade', 'Jogadores', 'Time', 'Maps', 'Rounds', 'KDiff', 'KD', 'Rating']])
 
 
-
-# jogadores = []
-# for c in range(0,len(players)):
-#     dicionario = {}
-#     dicionario['id'] = players[c].lower()
-#     dicionario['nacionalidade'] = Nacionalidade[c].lower()
-#     dicionario['time'] = time[c].lower()
-#     dicionario['times_anteriores'] = times_anteriores[c]
-#     dicionario['maps'] = maps[c]
-#     dicionario['rounds'] = status[c]
-#     dicionario['kdiff'] = kdiff[c]
-#     dicionario['kd'] = KD[c]
-#     dicionario['rating'] = rating[c]
-#     jogadores.append(dicionario)
-
-
-
 engine = sqlalchemy.create_engine('sqlite:///HLTV.db', echo=True)
 
 Base = declarative_base()
